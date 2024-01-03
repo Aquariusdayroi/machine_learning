@@ -1,0 +1,34 @@
+// trigger file - if you've done problem 9 but no stories are popping up, you
+// should edit this file to contain triggers that will fire on current news
+// stories!
+
+// title trigger named t1
+t1,TITLE,Japan
+
+// title trigger named t7
+t7,TITLE,Russia
+
+
+// title trigger named t8
+t8,TITLE,Tokyo
+
+// title trigger named t9
+t8,DESCRIPTION,Tokyo
+
+// description trigger named t2
+t2,DESCRIPTION,Japan
+
+// description trigger named t3
+t3,DESCRIPTION,Google
+
+// after trigger named t4
+t4,AFTER,3 Oct 2016 17:00:10
+
+// composite trigger named t4
+t5,AND,t2,t3
+
+// composite trigger named t4
+t6,AND,t1,t4
+
+// the trigger list contains t1 and t4
+ADD,t5,t6,t7,t8
